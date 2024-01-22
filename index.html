@@ -8,8 +8,93 @@
     <!-- Tailwind and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/1b201bd1bc.js" crossorigin="anonymous"></script>
+
+    <style>
+        .text-style{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="">This is Hockeys field.</h1>
+<body class="text-style lg:mx-32">
+    <header>
+        <div class="navbar bg-base-100 lg:mb-16">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-[#FF4240]" >Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost lg:text-[2.25rem] font-extrabold gap-0">Hockey<span class="text-[#FF4240]">&#8217;</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal font-bold px-1">
+                <li><a class="text-[#FF4240]">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa fa-search lg:w-6 lg:h-6 text-[#89898B] font-bold lg:mr-10 md:mr-10 sm:mr-8" style="font-size:24px"></i>
+              <a class="btn bg-[#FF4240] text-[#ffffff] font-bold  lg:w-36 lg:h-14 lg:text-xl">Get Ticket</a>
+            </div>
+          </div>
+
+          <!-- ----------------------------------------------- Header banner----------------------------- -->
+          <div class="relative">
+            <div class="carousel lg:w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-center lg:justify-start  transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-8">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-center lg:justify-start  transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-8">
+                      <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                      <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-center lg:justify-start  transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-8">
+                      <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                      <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-center lg:justify-start  transform -translate-y-1/2 left-5 right-5 bottom-0 lg:bottom-8">
+                      <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+                      <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="absolute lg:w-1/2 z-40 lg:right-8 lg:bottom-8 bg-black rounded-2xl">
+                <h1 class="font-extrabold text-2xl text-white px-8 pt-8 pb-4">Meet all the heroes from the field</h1>
+                <p class="text-base font-medium text-[#FFFFFF99] px-8 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+          </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
